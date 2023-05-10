@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="icon" type="image/x-icon" href="icon.gif">
 	<title>GRiME - Get Recognized in More Eyes</title>
 </head>
+
 <body>
 
-		<audio loop="" autoplay preload="auto" id="audio">
-	     	<source src="f555.mp3" type="audio/mp3">
-	    </audio>
-	    <script>
-			window.onload = function() {
-				document.getElementById("audio").play();
-				document.getElementById("audio").volume = 0.7;
-				}
-	    </script>
+		
 
 	<div class="intro">
 		<img class="intrologo" src="grime.gif">
@@ -60,5 +54,13 @@
 	</div>
 
 </div>
+
+<audio autoplay id="audio" controls="disabled">
+			<source src="f555.mp3" type="audio/mpeg">
+		</audio>
+		<script type="text/javascript">
+			 var audio = document.getElementById('audio');
+    audio.controls = false;
+		</script>
 </body>
 </html>
