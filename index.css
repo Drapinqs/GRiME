@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+	color: white;
+	animation: fadeInAnimation ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+@media (max-width: 1110px){
+.portfolio-item .layer {
+  display: none;
+}
+.portfolio-items{
+	position: relative;
+	top: -80px;
+  transform: scale(1.7);
+}
+.jxx h5{
+    font-size: 0px !important;
+}
+
+.jxx h5::before {
+    text-transform: none;
+    white-space: nowrap;
+    content: "JEWELXXET" !important;
+    font-size: 10px !important;
+    position: relative;
+}
+.syr h5{
+    font-size: 0px !important;
+}
+
+.syr h5::before {
+    text-transform: none;
+    white-space: nowrap;
+    content: "SYRINGE" !important;
+    font-size: 10px !important;
+    position: relative;
+}
+.von h5{
+    font-size: 0px !important;
+}
+
+.von h5::before {
+    text-transform: none;
+    white-space: nowrap;
+    content: "VON" !important;
+    font-size: 10px !important;
+    position: relative;
+}
+}
+
+.intro {
+position: absolute;
+  top: 12%; right: 50%;
+  transform: translate(50%,-50%);
+}
+
+.strong {
+	color: white;
+	font-size: 90%;
+}
+
+.superstrong {
+	font-size: 130%;
+}
+
+.introtxt {
+  position: absolute;
+  top: 110%; right: 50.3%;
+  transform: translate(50%,-50%) skew(30deg);;
+  font-family: Tangerine;
+  font-size: 200%;
+  color: #ddd;
+  word-spacing: 0.5rem;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.intrologo {
+	transform: scale(1.1);
+}
+
+.intro2 {
+position: absolute;
+  top: 50%; right:50%;
+  transform: translate(50%,-50%);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro3 {
+position: absolute;
+  top: 80%; right:50%;
+  transform: translate(50%,-50%);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.intro3 h1 {
+	font-weight: 1;
+}
+
+#portfolio{
+    padding: 80px 0;
+}
+.portfolio-items,
+.portfolio-filter {
+    list-style: none;
+    padding: 0;
+    margin: 0 -20px 20px 0;
+    color:#fff;
+}
+.portfolio-items > li {
+    float: left;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.portfolio-items.col-2 > li {
+    width: 50%;
+}
+.portfolio-items.col-3 > li {
+    width: 33%;
+}
+.portfolio-item .item-inner {
+  border-radius: 8px;
+  width: 95%;
+    background: #111112;
+    padding: 5px 5px 0;
+    margin: 0 10px 10px 0;
+    position: relative;
+    transition: all 0.3s;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 1px 1px 5px black;
+}
+.portfolio-item .item-inner img {
+  border-radius: 8px;
+  border-color: black;
+  background-color: #000;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 1px 1px 5px black;
+}
+.portfolio-item img {
+    width: 100%;
+}
+.portfolio-item h5 {
+	font-family: Verdana;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.item-inner:hover {
+    transform: scale(1.05);
+    filter: brightness(0.5);
+}
