@@ -1,26 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html onclick="play()">
 <head>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<link rel="icon" type="image/x-icon" href="icon.gif">
-	<title>GRiME - Get Recognized in More Eyes</title>
-</head>
-
-<body>
-
-		
-
-	<div class="intro">
-		<img class="intrologo" src="grime.gif">
-		<i class="introtxt"><strong class=strong>G</strong>ain <strong class=strong>R</strong>ecognition <strong class="strong superstrong">i</strong>n <strong class=strong>M</strong>ore <strong class=strong>E</strong>yes</i>
-	</div>
-	
-	<div class="intro2">
-		<section class="container">
-  			<ul class="portfolio-items col-3">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" type="image/x-icon" href="icon.gif">
+    <title>GRiME - Get Recognized in More Eyes</title>
+    </head>
+    <body>
+        <main>
+            <script>
+                function audioPlay() {
+                    var audio = document.getElementById("audio");
+                    audio.volume = 0.4;
+                    audio.play()
+                }
+            </script>
+            <input type="checkbox" autocomplete="off" id="overlay-toggle">
+            <div class="overlay fullscreen">
+                <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
+                    <span class="no-hover" style="font-family: derk; font-size: 0.6em;">⛧ tap to view ⛧</span>
+                    <span class="hover" style="font-family: derk; font-size: 0.6em;">⛧ click to view ⛧</span>
+                </label>
+            </div>
+            <audio loop="" preload="auto" id="audio">
+                <source src="f555.mp3" type="audio/mp3">
+            </audio>
+            <section class="fullscreen text-content">
+            
+            
+    <div class="intro">
+        <img class="intrologo" src="grime.gif">
+        <i class="introtxt"><strong class=strong>G</strong>ain <strong class=strong>R</strong>ecognition <strong class="strong superstrong">i</strong>n <strong class=strong>M</strong>ore <strong class=strong>E</strong>yes</i>
+    </div>
+    
+    <div class="intro2">
+        <section class="container">
+            <ul class="portfolio-items col-3">
                 <li class="portfolio-item apps">
                     <div class="item-inner jxx">
                         <img style="height,width: 400px;" src="JEWELXX.jpg" alt="">
@@ -44,23 +61,18 @@
                 </li> 
             </ul>
         </section>
-	</div>
+    </div>
 
-	<div class="intro3">
-		<span>
-			<h1>Who is GRiME?</h1>
-			<p>We are the ones who keep you interested.<br><br><strong>&lt; more news soon &gt;</strong></p>
-		</span>
-	</div>
+    <div class="intro3">
+        <span>
+            <h1>Who is GRiME?</h1>
+            <p>We are the ones who keep you interested.<br><br><strong>&lt; more news soon &gt;</strong></p>
+        </span>
+    </div>
 
 </div>
+        </section></main>
+    
 
-<audio autoplay id="audio" controls="disabled">
-			<source src="f555.mp3" type="audio/mpeg">
-		</audio>
-		<script type="text/javascript">
-			 var audio = document.getElementById('audio');
-    audio.controls = false;
-		</script>
-</body>
-</html>
+
+</body></html>
